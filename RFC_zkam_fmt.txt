@@ -79,7 +79,7 @@ RFC 14997 (WiP)                                                                 
     
     8. Charlie transfers the CRYPTO to his own wallet.
     
-    9. Using various means, Charlie erases all traces of his existence from the Internet or makes them irrelevant, switching to a new identity "Dave" via technological means.
+    9. Using technological means, Charlie erases all traces of his existence from the Internet or makes them irrelevant, switching to a new identity: "Dave".
     
     10. Alice, having not received the ITEM(IPhone), either calls her bank to execute chargeback or contacts Police in order to investigate the Bob's account number.
     
