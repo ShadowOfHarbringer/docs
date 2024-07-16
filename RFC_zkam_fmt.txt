@@ -40,11 +40,17 @@ RFC 14997 (WiP)                                                                 
     
 2.      DESCRIPTION OF THE MITM P2P FIAT-TO-CRYPTO FINANCIAL SPOOFING ATTACK (MPFTC-FSA)
 
-    In a direct Peer-To-Peer crypto trading market (we will call it [MARKET] for the purpose of this document), where users directly enter trade agreements where they exchange a non-chargebackable hard money-type cryptocurrency (called CRYPTO here) for another government controlled asset like fiduciary money (called [FIAT] here), MPFTC-FSA can be described in the following way:
+    In a direct Peer-To-Peer crypto trading market, where users directly enter trade agreements where they exchange a cryptocurrency for a government controlled asset like fiduciary money, MPFTC-FSA can be described in the following way:
     
-    Let's make following assumptions:
+    Let's make some following assumptions and definitions first:
     
-    - Bob is a honest seller of crypto that has publishes a SELL crypto offer in exchange for a bank fiat transfer. Also he is the first victim.
+    - CRYPTO is a hard money-type cryptocurrency without chargeback functionality, for example it can be Bitcoin Cash or Monero.
+    
+    - FIAT is a government controlled asset like fiduciary money in an electronic form, with partial or complete chargeback functionality.
+    
+    - MARKET is the virtual place and environment on the Internet where users exchange CRYPTO for FIAT and the reverse.
+    
+    - Bob is a honest seller of crypto that has publishes a "sell" crypto offer in exchange for a bank fiat transfer. Also he is the first victim.
     
     - Alice is a honest item or service buyer, that is completely unrelated to the CRYPTO/FIAT exchange happening. Due to the attack, she becomes the second victim.
     
@@ -52,7 +58,7 @@ RFC 14997 (WiP)                                                                 
     
     - ITEM-MARKET is a completely unrelated service where items are traded for FIAT - this can be for example ebay, amazon, craiglist or gumtree.
     
-    - ITEM(IPhone) is an unrelated goods/services used as a lure by Charlie, the item never actually exists. 
+    - ITEM(IPhone) is unrelated goods/services used as a lure by Charlie, the item(s) never actually exist. 
     
     
     The complete attack procedure is as follows:
@@ -95,7 +101,7 @@ RFC 14997 (WiP)                                                                 
     
     3. Charlie the scammer, being Man In The Middle attacker, can impersonate both other parties of the trade during the communication between them, he can describe himself as "Bob" when communicating with Alice and he can describe himself as "Alice" when communicating with Bob, making detection of this scam very difficult. 
     
-    4. Assuming Alice is not a security expert (which is likely), it is virtually impossible or impractical for her to detect that she is transfering funds to a seller of a crypto market.
+    4. Assuming Alice is not a security&technology expert (which is likely), it is virtually impossible or impractical for her to detect that she is transfering funds to a seller of a crypto market.
     
     5. Assuming the number of scammers using the MPFTC-FS attacks is large, it can cause a slow erosion of honest CRYPTO sellers to the point the MARKET becomes severely damaged or even goes bankrupt due to the lack of CRYPTO sellers.
     
@@ -108,7 +114,6 @@ RFC 14997 (WiP)                                                                 
     
     
 4.      THE ZERO-KYC ASSURANCE MECHANISM FOR FIDUCIARY MONEY TRANSFER (ZKAM-FMT)
-
 
     4.1     The purpose of the ZKAM-FMT mechanism
 
@@ -169,14 +174,16 @@ RFC 14997 (WiP)                                                                 
 
     To strongly minimize the possibility of mistakes and data leaks, there exists an alternative way in which the BROWSER can be implemented. 
     
-    The BROWSER-FILTER variant, in the process of redirection of the crypto buyer to his bank website for the purpose of making FIAT transfer, the BROWSER only receives the few important pieces of data from BACKEND and verifies whether they match to the data entered into the website form by the user plus it verifies whether the process ended up in success or failure. No data at all, except error code (signifying the SUCCESS or FAILURE) is sent back to neeither MARKET APP or BACKEND. 
+    The BROWSER-FILTER variant, in the process of redirection of the crypto buyer to his bank website for the purpose of making FIAT transfer, the BROWSER only receives the few important pieces of data from BACKEND and verifies whether they match to the data entered into the website form by the user plus it verifies whether the process ended up in success or failure. No data at all, except error code (signifying the SUCCESS or FAILURE) is sent back to neither MARKET APP or BACKEND. 
     
     This ensures that even in the case of software failures and bugs in BROWSER, the probability of returning some critical private data of the account owner like login, password, OTP codes or similar and accidentally storing it by BACKEND is negligible and unrealistic in practice.
 
         
-    4.7     ZKAM-FMT mechanism: Relaying hashes of data field's contents instead of raw data between MARKET APP, BACKEND and BROWSER.
+    4.7     ZKAM-FMT mechanism: BROWSER with HASH FILTER variant 
 
-    In order to further eradicate legal and security risks related to even temporarily storing user information, the critical data crypto seller enters (like account number, account name, amount) can be turned to hashes and then sent to the BACKEND in this form. BACKEND then relays these hashes to BROWSER and the browser verifies whether the hashes of the data entered by the user on the bank website match the supplied hashes. If the hashes match and the FIAT transfer process ends in success, BROWSER returns success code, otherwise it returns error code depending on in what manner the process failed. 
+    Relaying hashes of data field's contents instead of raw data between MARKET APP, BACKEND and BROWSER can be employed to further further eradicate legal and security risks related to even temporarily storing user information.
+    
+    Using the BROWSER-HASHED-FILTER variant, the critical data crypto seller enters (like account number, account name, amount) can be turned to hashes and then sent to the BACKEND in this form. BACKEND then relays these hashes to BROWSER and the browser verifies whether the hashes of the data entered by the user on the bank website match the supplied hashes. If the hashes match and the FIAT transfer process ends in success, BROWSER returns success code, otherwise it returns error code depending on in what manner the process failed. 
 
     
     
