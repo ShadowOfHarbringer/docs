@@ -179,7 +179,7 @@ RFC 14997 (WiP)                                                                 
     This ensures that even in the case of software failures and bugs in BROWSER, the probability of returning some critical private data of the account owner like login, password, OTP codes or similar and accidentally storing it by BACKEND is negligible and unrealistic in practice.
 
         
-    4.7     ZKAM-FMT mechanism: BROWSER with HASH FILTER variant 
+    4.7     ZKAM-FMT mechanism: BROWSER with HASHED FILTER variant 
 
     Relaying hashes of data field's contents instead of raw data between MARKET APP, BACKEND and BROWSER can be employed to further further eradicate legal and security risks related to even temporarily storing user information.
     
