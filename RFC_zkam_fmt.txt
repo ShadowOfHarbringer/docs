@@ -3,8 +3,8 @@
 
 
                                
-RFC 14997 (WiP)                                                                     July 2024
-                                      ZERO-KYC ASSURANCE MECHANISM FOR FIDUCIARY MONEY TRANSFER                      
+RFC DRAFT 31337 (WiP)                                                                 July 2024
+ZERO-KYC ASSURANCE MECHANISM FOR FIDUCIARY MONEY TRANSFER                      
                                 
                                 
                                 
