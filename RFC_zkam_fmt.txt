@@ -34,7 +34,7 @@ RFC 14997 (WiP)                                                                 
     
     The mechanism works without the need of any kind of integration with electronic systems of Banks or any kind of intervention on their behalf.
     
-    Specific attack this mechanism was designed to stop can be called Man In The Middle Fiat-To-Crypto Financial Spoofing Attack (MPFTC-FSA) and is described in section 2 of this document. 
+    Specific attack this mechanism was designed to stop can be called Man In The Middle P2P Fiat-To-Crypto Financial Spoofing Attack (MPFTC-FSA) and is described in section 2 of this document. 
 
     
     
@@ -63,7 +63,7 @@ RFC 14997 (WiP)                                                                 
     
     The complete attack procedure is as follows:
     
-    1. Bob, the honest crypto seller  puts an offer of sale of CRYPTO (1.00000000 Bitcoin Cash) in exchange for 1000 units of FIAT money executed as a bank wire transfer on the MARKET.
+    1. Bob, the honest crypto seller puts an offer of sale of CRYPTO (1.00000000 Bitcoin Cash) in exchange for 1000 units of FIAT money executed as a bank wire transfer on the MARKET.
     
     2. Charlie the scammer notices the offer, and makes fake/fraud listing of an ITEM(IPhone) sale on ITEM-MARKET. He sets the price to 1000 units of FIAT money.
     
@@ -75,25 +75,25 @@ RFC 14997 (WiP)                                                                 
     
     6. Alice transfers her FIAT money to Bob's account.
     
-    7. Bob receives the bank FIAT transfer, unlocking the cryptocurrency to be acquired by Charlie. 
+    7. Bob receives the bank FIAT transfer, unlocking the offered CRYPTO to be acquired by Charlie. 
     
     8. Charlie transfers the CRYPTO to his own wallet.
     
     9. Using technological means, Charlie erases all traces of his existence from the Internet or makes them irrelevant, switching to a new identity: "Dave".
     
-    10. Alice, having not received the ITEM(IPhone), either calls her bank to execute chargeback or contacts Police in order to investigate the Bob's account number.
+    10. Alice, having not received the ITEM(IPhone), either calls her bank to execute chargeback or contacts the Police in order to investigate the Bob's account number.
     
     11. Bob the honest seller gets prosecuted by either the Police because of the scam accusation or by his bank because of scam suspect due to a customer's chargeback.
 
-    - A) After above procedure repeats 100 times, in the worst case scenario Bob goes bankrupt/to prison due to lawsuits or being barred from having a bank account because of being perceived by the banking system as a scammer.
+    - A) After above procedure repeats 100 times, in an pessimistic scenario, Bob goes bankrupt/to prison due to lawsuits or being barred from having a bank account because of being perceived by the banking system as a scammer.
     
-    - B) After above procedure repeats 100 times, in the best case scenario Bob gets tired of constant problems and accusations and simply stops trading CRYPTO on the MARKET.
+    - B) After above procedure repeats 100 times, in an optimistic scenario, Bob gets tired of constant problems and accusations and simply stops trading CRYPTO on the MARKET.
     
     
         
 3.      THE SIGNIFICANCE OF THE MPFTC-FS ATTACKS IN LARGE SCALE AND OVER LONGER PERIODS OF TIME
     
-    Due to their stealthy and near-untraceable nature MPFTC-FS attacks are extremely dangerous to any kind of direct Peer-To-Peer CRYPTO MARKET because of multiple reasons:
+    Due to their stealthy and near-untraceable nature MPFTC-FS Attacks are extremely dangerous to any kind of direct Peer-To-Peer CRYPTO MARKET because of multiple reasons:
     
     1. Unlike many other scam schemes, MARKET is not the target of the scam. 
     
@@ -103,9 +103,9 @@ RFC 14997 (WiP)                                                                 
     
     4. Assuming Alice is not a security&technology expert (which is likely), it is virtually impossible or impractical for her to detect that she is transfering funds to a seller of a crypto market.
     
-    5. Assuming the number of scammers using the MPFTC-FS attacks is large, it can cause a slow erosion of honest CRYPTO sellers to the point the MARKET becomes severely damaged or even goes bankrupt due to the lack of CRYPTO sellers.
+    5. Assuming the number of scammers using the MPFTC-FS Attacks is large, it can cause a slow erosion of honest CRYPTO sellers to the point the MARKET becomes severely damaged or even goes bankrupt due to the lack of CRYPTO sellers.
     
-    6. It is therefore highly logical to assume that MPFTC-FS attacks could be the main cause of the degradation and deaths of many P2P MARKETs that happened and perhaps may/will happen in the future.
+    6. It is therefore highly logical to assume that MPFTC-FS Attacks could be the main cause of the degradation and deaths of many P2P MARKETs that happened and perhaps may/will happen in the future.
     
     7. Under normal circumstances, due to the existence of Proxies, TOR relays and other anonymity tools on the Internet, detecting that Charlie is a scammer will be very difficult to the point of being impractical.
     
@@ -217,7 +217,7 @@ RFC 14997 (WiP)                                                                 
     
     7. Once the FIAT transfer process succeeds, BROWSER software is closed and Charlie is moved back to the MARKET APP.
     
-    8. BROWSER relays the requested data plus success or failure to BACKEND and/or MARKET APP.
+    8. BROWSER relays the requested data plus success or failure status to BACKEND and/or MARKET APP.
     
     9. The BACKEND receives the success code from BROWSER or MARKET APP and the internal logic decides to notify the CRYPTO seller Bob.
     
