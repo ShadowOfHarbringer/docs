@@ -193,11 +193,11 @@ Table of Contents
        
    The objective of Zero-KYC Assurance Mechanism for Fiduciary Money 
    Transfer (ZKAM-FMT) is to ensure that fiat money is transfered 
-   from a bank account or a related bank-provided service are sent 
-   in the exact amount, with the exact target and from the designated 
-   person without a possibility of Man In The Middle attack, spoofing 
-   transaction data or pretending the transaction was executed while 
-   in reality it was not.
+   from a bank account or a related bank-provided service in the exact 
+   amount, with the exact target and from the designated person without 
+   a possibility of Man In The Middle attack, spoofing transaction data 
+   or pretending the transaction was executed while in reality 
+   it was not.
 
    The procedure works without the need of any kind of integration 
    with electronic systems of Banks or any kind of intervention on 
@@ -495,7 +495,7 @@ Transfer</span>
       document, neither the MARKET APP or the BROWSER will never 
       relay any personal information of the person making a FIAT 
       transfer. The only information that is verified and 
-      temporarily stored is the Account Data of the Fiat Receiver, 
+      temporarily stored is the Account Data of the FIAT Receiver, 
       but this is already the case because the trade participants 
       usually share such data on the internal chat of the MARKET 
       APP, which implies that some of it is also at least 
@@ -689,7 +689,7 @@ Transfer</span>
         10. BROWSER relays the requested data plus transaction 
         status to BACKEND and/or MARKET APP.
 
-        10. The BACKEND receives the data from BROWSER or MARKET APP 
+        11. The BACKEND receives the data from BROWSER or MARKET APP 
         and the internal logic decides that the transaction was 
         fraudulent because the amount was invalid, generates 
         an error code (STATUS: INVALID AMOUNT).
@@ -698,34 +698,34 @@ Transfer</span>
 <hr class="noprint"><!--NewPage--><pre class="newpage"><span id="page-10"></span>
 <span class="grey">RFC (Draft) 31337                 ZKAM-FMT                    17 July 2024</span>
         
-        11. The BACKEND decides to notify the CRYPTO seller Bob 
+        12. The BACKEND decides to notify the CRYPTO seller Bob 
         that Charlie tried to cheat the purchase process.
         
-        12. Charlie, assuming he will succeed to cheat the process,
+        13. Charlie, assuming he will succeed to cheat the process,
         responds to the ITEM(IPhone) purchase request from Alice, 
         he gives her the account number received from Bob and tells
         her to use the transfer title “YYY-RND-YYY” received from 
         MARKET APP.
       
-        13. Alice transfers her FIAT money to Bob’s account.
+        14. Alice transfers her FIAT money to Bob’s account.
       
-        14. The internal logic of MARKET APP decides to interrupt 
+        15. The internal logic of MARKET APP decides to interrupt 
         the purchase process and mark the trade as invalid, 
-        locking out the crypto payout from Bob.
+        locking out the CRYPTO payout from Bob.
         
-        15. Bob receives the notification about fraudulent cancelled
+        16. Bob receives the notification about fraudulent cancelled
         trade and is told to return any unidentified FIAT transfered 
         to his account having the title “YYY-RND-YYY” or the amount 
         "1000" back to sender.
         
-        16. THE COMPANY notifies the authorities about the fraud 
+        17. THE COMPANY notifies the authorities about the fraud 
         attempt, giving collected data (like an IP address, used bank 
         URL) of Charlie to the authorities.
         
-        17. Having understood the situation, crypto seller Bob 
+        18. Having understood the situation, crypto seller Bob 
         returns received FIAT back to Alice.
         
-        18. Charlie is later prosecuted for attempting 
+        19. Charlie is later prosecuted for attempting 
         a Man-In-The-Middle market scam.
 
         
